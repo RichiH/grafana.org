@@ -1,1 +1,1 @@
-Modernizr.addTest("csspositionsticky",function(){var e="position:",t="sticky",n=document.createElement("modernizr"),i=n.style;return i.cssText=e+Modernizr._prefixes.join(t+";"+e).slice(0,-e.length),-1!==i.position.indexOf(t)});
+Modernizr.addTest("csspositionsticky",function(){var t="position:",e="sticky",n=document.createElement("modernizr"),r=n.style;return r.cssText=t+Modernizr._prefixes.join(e+";"+t).slice(0,-t.length),-1!==r.position.indexOf(e)});

@@ -1,1 +1,1 @@
-Modernizr.addTest("lowbattery",function(){var t=.2,e=Modernizr.prefixed("battery",navigator);return!!(e&&!e.charging&&e.level<=t)});
+Modernizr.addTest("lowbattery",function(){var e=.2,t=Modernizr.prefixed("battery",navigator);return!!(t&&!t.charging&&t.level<=e)});

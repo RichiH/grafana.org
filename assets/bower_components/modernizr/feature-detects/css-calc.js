@@ -1,1 +1,1 @@
-Modernizr.addTest("csscalc",function(){var e="width:",t="calc(10px);",n=document.createElement("div");return n.style.cssText=e+Modernizr._prefixes.join(t+e),!!n.style.length});
+Modernizr.addTest("csscalc",function(){var t="width:",e="calc(10px);",n=document.createElement("div");return n.style.cssText=t+Modernizr._prefixes.join(e+t),!!n.style.length});
