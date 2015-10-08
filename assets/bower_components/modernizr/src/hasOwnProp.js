@@ -1,0 +1,1 @@
+define(["is"],function(e){var t;return function(){var n={}.hasOwnProperty;t=e(n,"undefined")||e(n.call,"undefined")?function(t,n){return n in t&&e(t.constructor.prototype[n],"undefined")}:function(e,t){return n.call(e,t)}}(),t});

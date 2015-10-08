@@ -1,1 +1,1 @@
-define(function(){function e(e,t){return{get:function(){return e()?(delete this.get,void 0):(this.get=t).apply(this,arguments)}}}return e});
+define(function(){function e(e,t){return{get:function(){return e()?void delete this.get:(this.get=t).apply(this,arguments)}}}return e});

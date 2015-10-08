@@ -5,7 +5,7 @@
   <id>http://grafana.org/blog</id>
   <link href="http://grafana.org/blog"/>
   <link href="http://grafana.org/feed.xml" rel="self"/>
-  <updated>2015-08-04T00:00:00Z</updated>
+  <updated>2015-08-04T02:00:00+02:00</updated>
   <author>
     <name>Grafana</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Grafana 2.1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html"/>
     <id>http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html</id>
-    <published>2015-08-04T00:00:00Z</published>
-    <updated>2015-08-24T09:37:25-04:00</updated>
+    <published>2015-08-04T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -54,7 +54,7 @@ on a multi-value template variable.&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img title="Repeating Rows and Panels" alt="Repeating Rows and Panels" src="/assets/img/blog/panel-row-repeat.gif" /&gt;
 &lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
 
-&lt;h3 id="dashboard-links-&amp;amp;-navigation"&gt;Dashboard Links &amp;amp; Navigation&lt;/h3&gt;
+&lt;h3 id="dashboard-links-amp-navigation"&gt;Dashboard Links &amp;amp; Navigation&lt;/h3&gt;
 
 &lt;p&gt;To support better navigation between dashboards, it&amp;rsquo;s now possible to create custom and dynamic links from individual
 panels to appropriate Dashboards. You also have the ability to create flexible top-level links on any
@@ -66,7 +66,7 @@ given Dashboard thanks to the new Dashboard navigation bar feature.&lt;/p&gt;
 dashboard links or dropdowns based on custom dashboard search query. These links appear in the same
 row under the top menu where template variables appear.&lt;/p&gt;
 
-&lt;hr&gt;
+&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
 
 &lt;h3 id="better-local-dashboard-support"&gt;Better local Dashboard support&lt;/h3&gt;
 
@@ -115,7 +115,7 @@ The Viewer role has been modified in Grafana 2.1 so that users assigned this rol
 
 &lt;h2 id="data-source-improvements"&gt;Data source Improvements&lt;/h2&gt;
 
-&lt;h3 id="influxdb-0.9-support"&gt;InfluxDB 0.9 Support&lt;/h3&gt;
+&lt;h3 id="influxdb-0-9-support"&gt;InfluxDB 0.9 Support&lt;/h3&gt;
 
 &lt;p&gt;Grafana 2.1 now comes with full support for InfluxDB 0.9. There is a new query editor designed from scratch
 for the new features InfluxDB 0.9 enables.&lt;/p&gt;
@@ -134,7 +134,7 @@ The query editor is also enhanced to limiting tags by metric.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/strong&gt; OpenTSDB config option tsd.core.meta.enable_realtime_ts must enabled for OpenTSDB lookup api)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id="new-data-source:-kairosdb"&gt;New Data Source: KairosDB&lt;/h3&gt;
+&lt;h3 id="new-data-source-kairosdb"&gt;New Data Source: KairosDB&lt;/h3&gt;
 
 &lt;p&gt;The Cassandra backed time series database KairosDB is now supported in Grafana out of the box. Thank you to
 &lt;a href="https://github.com/masaori335" target="_blank"&gt;masaori335&lt;/a&gt; for his hard work in getting it to this point. Also thanks
@@ -176,9 +176,9 @@ view the &lt;a href="&amp;quot;https://github.com/grafana/grafana/blob/master/CH
 
 &lt;hr&gt;
 
-&lt;h3 id="download-grafana-2.1-now"&gt;&lt;a href="http://grafana.org/download"&gt;Download Grafana 2.1 now&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="download-grafana-2-1-now"&gt;&lt;a href="http://grafana.org/download"&gt;Download Grafana 2.1 now&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id="demo-dashboard-for-grafana-2.1-features"&gt;&lt;a href="http://play.grafana.org/dashboard/db/new-features-in-v2-1"&gt;Demo dashboard for Grafana 2.1 features&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="demo-dashboard-for-grafana-2-1-features"&gt;&lt;a href="http://play.grafana.org/dashboard/db/new-features-in-v2-1"&gt;Demo dashboard for Grafana 2.1 features&lt;/a&gt;&lt;/h3&gt;
 
 &lt;hr&gt;
 
@@ -195,7 +195,7 @@ view the &lt;a href="&amp;quot;https://github.com/grafana/grafana/blob/master/CH
 
 &lt;h2 id="subscribe-to-project-updates"&gt;Subscribe to project updates&lt;/h2&gt;
 
-&lt;p&gt;&lt;section class="newsletter"&gt;
+&lt;section class="newsletter"&gt;
   &lt;form action="http://grafana.us8.list-manage.com/subscribe/post?u=2aeb5711db2aececc990be536&amp;amp;id=5585d37ecc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"&gt;
     &lt;row class="collapse"&gt;
       &lt;div class="medium-10 columns"&gt;
@@ -206,15 +206,15 @@ view the &lt;a href="&amp;quot;https://github.com/grafana/grafana/blob/master/CH
       &lt;/div&gt;
     &lt;/row&gt;
   &lt;/form&gt;
-&lt;/section&gt;&lt;/p&gt;
+&lt;/section&gt;
 </content>
   </entry>
   <entry>
     <title>Grafana 2.0 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/20/Grafana-2-Released.html"/>
     <id>http://grafana.org/blog/2015/04/20/Grafana-2-Released.html</id>
-    <published>2015-04-20T00:00:00Z</published>
-    <updated>2015-07-20T13:51:40-04:00</updated>
+    <published>2015-04-20T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -234,7 +234,7 @@ guide.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://docs.grafana.org/v2.0/installation/migrating_to2/"&gt;Migrating from 1.x to 2.x&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="what&amp;#39;s-new-in-grafana-v2.0"&gt;What&amp;rsquo;s New in Grafana v2.0&lt;/h2&gt;
+&lt;h2 id="what-39-s-new-in-grafana-v2-0"&gt;What&amp;rsquo;s New in Grafana v2.0&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Read the &lt;a href="http://docs.grafana.org/guides/whats-new-in-v2/"&gt;What&amp;rsquo;s new In Grafana 2.0&lt;/a&gt; article&lt;/li&gt;
@@ -263,7 +263,7 @@ guide.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://developer.mediamath.com/OpenSource"&gt;Mediamath&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;section class="newsletter"&gt;
+&lt;section class="newsletter"&gt;
   &lt;form action="http://grafana.us8.list-manage.com/subscribe/post?u=2aeb5711db2aececc990be536&amp;amp;id=5585d37ecc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"&gt;
     &lt;row class="collapse"&gt;
       &lt;div class="medium-10 columns"&gt;
@@ -274,15 +274,15 @@ guide.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/row&gt;
   &lt;/form&gt;
-&lt;/section&gt;&lt;/p&gt;
+&lt;/section&gt;
 </content>
   </entry>
   <entry>
     <title>March 2015 User Survey</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/09/March15-Survery.html"/>
     <id>http://grafana.org/blog/2015/04/09/March15-Survery.html</id>
-    <published>2015-04-09T00:00:00Z</published>
-    <updated>2015-07-07T10:28:23-04:00</updated>
+    <published>2015-04-09T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -305,8 +305,8 @@ gratifying compliments about how much everyone appreciate Grafana.&lt;/p&gt;
     <title>Grafana 2.0-Beta1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html"/>
     <id>http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html</id>
-    <published>2015-03-30T00:00:00Z</published>
-    <updated>2015-09-14T11:18:15-04:00</updated>
+    <published>2015-03-30T02:00:00+02:00</published>
+    <updated>2015-10-08T08:52:14+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -325,7 +325,7 @@ guide.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://docs.grafana.org/v2.0/installation/migrating_to2/"&gt;Migrating from 1.x to 2.x&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="what&amp;#39;s-new-in-grafana-v2.0"&gt;What&amp;rsquo;s New in Grafana v2.0&lt;/h2&gt;
+&lt;h2 id="what-39-s-new-in-grafana-v2-0"&gt;What&amp;rsquo;s New in Grafana v2.0&lt;/h2&gt;
 
 &lt;p&gt;There are so many new features (as well as fixes) to talk about. Below is some of the highlights.&lt;/p&gt;
 
@@ -348,7 +348,7 @@ after a certain time period.&lt;/p&gt;
 have access to your Grafana instance. Instead of taking a picture you can snapshot the current visible data
 and share an interactive dashboard. It can also be used in combination with panel iframe embedding (mentioned below).&lt;/p&gt;
 
-&lt;h3 id="panel-time-overrides-&amp;amp;-timeshift"&gt;Panel time overrides &amp;amp; timeshift&lt;/h3&gt;
+&lt;h3 id="panel-time-overrides-amp-timeshift"&gt;Panel time overrides &amp;amp; timeshift&lt;/h3&gt;
 
 &lt;p&gt;In Grafana v2.x you can now override the relative time range for individual panels. You can also add a
 time shift to individual panels. This allows you to show metrics from different time periods or days
@@ -395,7 +395,7 @@ longer create a new dashboard. It will just change the name for the current dash
 To change name and create a new dashboard use the &lt;code class="prettyprint"&gt;Save As...&lt;/code&gt; menu option&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id="new-search-view-&amp;amp;-starring-dashboards"&gt;New search view &amp;amp; starring dashboards&lt;/h3&gt;
+&lt;h3 id="new-search-view-amp-starring-dashboards"&gt;New search view &amp;amp; starring dashboards&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src="http://docs.grafana.org/img/v2/dashboard_search.jpg" /&gt;&lt;/p&gt;
 
@@ -417,7 +417,7 @@ latency, network traffic or storage.&lt;/p&gt;
 &lt;p&gt;There is one new panel in Grafana v2.0 and that is the &lt;code class="prettyprint"&gt;Dashboard list&lt;/code&gt; panel. This panel can show the current
 signed in user&amp;rsquo;s starred dashboards or dashboards based on a custom search (keyword or tags).&lt;/p&gt;
 
-&lt;h3 id="data-source-proxy-&amp;amp;-admin-views"&gt;Data Source proxy &amp;amp; admin views&lt;/h3&gt;
+&lt;h3 id="data-source-proxy-amp-admin-views"&gt;Data Source proxy &amp;amp; admin views&lt;/h3&gt;
 
 &lt;p&gt;Data sources in Grafana v2.0 are NOT defined in a config file but added through the UI. The backend can also
 handle proxying data source metric requests which means that it is a lot easier to get started using Grafana with
@@ -457,7 +457,7 @@ data source is accessible from your Grafana server host machine.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="http://docs.grafana.org/img/v2/share_dialog_image_highlight.jpg" /&gt;&lt;/p&gt;
 
-&lt;h3 id="user-&amp;amp;-organization-permissions"&gt;User &amp;amp; Organization permissions&lt;/h3&gt;
+&lt;h3 id="user-amp-organization-permissions"&gt;User &amp;amp; Organization permissions&lt;/h3&gt;
 
 &lt;p&gt;All dashboards and data sources are linked to an organization (not to a user). Users are linked to
 Organizations via a role. That role can be:&lt;/p&gt;
@@ -497,7 +497,7 @@ the docs or want to improve it, do not hesitate to submit a PR.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://developer.mediamath.com/OpenSource"&gt;Mediamath&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;section class="newsletter"&gt;
+&lt;section class="newsletter"&gt;
   &lt;form action="http://grafana.us8.list-manage.com/subscribe/post?u=2aeb5711db2aececc990be536&amp;amp;id=5585d37ecc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"&gt;
     &lt;row class="collapse"&gt;
       &lt;div class="medium-10 columns"&gt;
@@ -508,15 +508,15 @@ the docs or want to improve it, do not hesitate to submit a PR.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/row&gt;
   &lt;/form&gt;
-&lt;/section&gt;&lt;/p&gt;
+&lt;/section&gt;
 </content>
   </entry>
   <entry>
     <title>Grafana 2.0 Alpha &amp; Preview</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html"/>
     <id>http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html</id>
-    <published>2015-02-10T00:00:00Z</published>
-    <updated>2015-07-07T10:28:23-04:00</updated>
+    <published>2015-02-10T01:00:00+01:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -533,13 +533,14 @@ infrastructure monitoring platform.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/assets/img/blog/Grafana2_Preview_1.png" /&gt;&lt;/p&gt;
 
-&lt;h2 id="code-&amp;amp;-docker-image"&gt;Code &amp;amp; Docker image&lt;/h2&gt;
+&lt;h2 id="code-amp-docker-image"&gt;Code &amp;amp; Docker image&lt;/h2&gt;
 
 &lt;p&gt;The Grafana 2.0 backend and frontend changes are now public in the &lt;a href="https://github.com/grafana/grafana/tree/develop"&gt;develop&lt;/a&gt;
 branch in the main grafana repository on Github. The readme on that branch contains instructions for how to build and run the
 new backend. You can also try it using docker with a single line like this:&lt;/p&gt;
-&lt;pre class="highlight text"&gt;docker run -i -p 3000:3000 grafana/grafana:develop
-&lt;/pre&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;docker run -i -p 3000:3000 grafana/grafana:develop
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;There are no offical binary packages yet as there is still some work that needs
 to be done before a beta release can be made. Grafana 2.0 is not ready for
 production use yet. If you want to help please checkout out the develop branch
@@ -566,7 +567,7 @@ should also come in handy as we could provide images of related graphs along wit
 
 &lt;p&gt;Currently the PNG rendering feature is a just a simple link in the share panel dialog.&lt;/p&gt;
 
-&lt;h3 id="user-&amp;amp;-account-model"&gt;User &amp;amp; Account model&lt;/h3&gt;
+&lt;h3 id="user-amp-account-model"&gt;User &amp;amp; Account model&lt;/h3&gt;
 
 &lt;p&gt;To support SaaS and larger Grafana installations we have added a User and Account model similar to
 how Google Analytics has implemented this. Dashboards, data sources, etc are not tied to a specific user
@@ -617,7 +618,7 @@ But it is likely that long term this standalone mode will be removed, but this i
 &lt;p&gt;So stay tuned for a beta sometime early or mid March (if this goes as we hope).
 Subscribe to newsletter to get notified.&lt;/p&gt;
 
-&lt;p&gt;&lt;section class="newsletter"&gt;
+&lt;section class="newsletter"&gt;
   &lt;form action="http://grafana.us8.list-manage.com/subscribe/post?u=2aeb5711db2aececc990be536&amp;amp;id=5585d37ecc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"&gt;
     &lt;row class="collapse"&gt;
       &lt;div class="medium-10 columns"&gt;
@@ -628,7 +629,7 @@ Subscribe to newsletter to get notified.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/row&gt;
   &lt;/form&gt;
-&lt;/section&gt;&lt;/p&gt;
+&lt;/section&gt;
 
 &lt;h2 id="thanks-to-project-sponsors"&gt;Thanks to project sponsors&lt;/h2&gt;
 
@@ -644,8 +645,8 @@ Subscribe to newsletter to get notified.&lt;/p&gt;
     <title>Grafana 2.0, the future, and raintank</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html"/>
     <id>http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html</id>
-    <published>2015-01-12T00:00:00Z</published>
-    <updated>2015-07-07T10:28:23-04:00</updated>
+    <published>2015-01-12T01:00:00+01:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -730,7 +731,7 @@ will focus on building and providing a SaaS platform around open source metric a
 &lt;p&gt;We have assembled a great team with a lot of engineering and design talent that will, among many other things,
 accelerate Gafana development and strengthen the open source monitoring community.&lt;/p&gt;
 
-&lt;h3 id="grafana-2.0"&gt;Grafana 2.0&lt;/h3&gt;
+&lt;h3 id="grafana-2-0"&gt;Grafana 2.0&lt;/h3&gt;
 
 &lt;p&gt;So the good news is that there will NOT be any splintering of the Grafana user community into Pro/Enterprise
 users and OSS users. There will just be one open source Grafana codebase and variant. There will continue to

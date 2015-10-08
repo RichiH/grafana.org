@@ -1,1 +1,1 @@
-define(["./arr"],function(t){return t.slice});
+define(["./arr"],function(e){return e.slice});

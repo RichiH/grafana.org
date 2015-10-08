@@ -1,1 +1,0 @@
-Modernizr.addTest("csspositionsticky",function(){var t="position:",e="sticky",n=document.createElement("modernizr"),r=n.style;return r.cssText=t+Modernizr._prefixes.join(e+";"+t).slice(0,-t.length),-1!==r.position.indexOf(e)});
