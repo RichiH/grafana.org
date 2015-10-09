@@ -1,0 +1,1 @@
+Modernizr.addTest("cssvmaxunit",function(){var t;return Modernizr.testStyles("#modernizr { width: 50vmax; }",function(e,n){var i=window.innerWidth/100,r=window.innerHeight/100,o=parseInt((window.getComputedStyle?getComputedStyle(e,null):e.currentStyle).width,10);t=parseInt(50*Math.max(i,r),10)==o}),t});
