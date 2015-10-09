@@ -1,0 +1,1 @@
+define(function(){function e(e,t){return e-1===t||e===t||e+1===t}return e});
