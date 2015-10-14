@@ -1,1 +1,0 @@
-Modernizr.addTest("dataset",function(){var A=document.createElement("div");return A.setAttribute("data-a-b","c"),!(!A.dataset||"c"!==A.dataset.aB)});

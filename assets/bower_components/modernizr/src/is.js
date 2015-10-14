@@ -1,0 +1,1 @@
+define(function(){function e(e,t){return typeof e===t}return e});
