@@ -5,7 +5,7 @@
   <id>http://grafana.org/blog</id>
   <link href="http://grafana.org/blog"/>
   <link href="http://grafana.org/feed.xml" rel="self"/>
-  <updated>2015-08-03T20:00:00-04:00</updated>
+  <updated>2015-08-04T02:00:00+02:00</updated>
   <author>
     <name>Grafana</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Grafana 2.1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html"/>
     <id>http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html</id>
-    <published>2015-08-03T20:00:00-04:00</published>
-    <updated>2015-08-05T12:28:11-04:00</updated>
+    <published>2015-08-04T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -213,8 +213,8 @@ view the &lt;a href="&amp;quot;https://github.com/grafana/grafana/blob/master/CH
     <title>Grafana 2.0 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/20/Grafana-2-Released.html"/>
     <id>http://grafana.org/blog/2015/04/20/Grafana-2-Released.html</id>
-    <published>2015-04-19T20:00:00-04:00</published>
-    <updated>2015-07-29T03:36:23-04:00</updated>
+    <published>2015-04-20T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -281,8 +281,8 @@ guide.&lt;/p&gt;
     <title>March 2015 User Survey</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/09/March15-Survery.html"/>
     <id>http://grafana.org/blog/2015/04/09/March15-Survery.html</id>
-    <published>2015-04-08T20:00:00-04:00</published>
-    <updated>2015-07-29T03:36:23-04:00</updated>
+    <published>2015-04-09T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -305,8 +305,8 @@ gratifying compliments about how much everyone appreciate Grafana.&lt;/p&gt;
     <title>Grafana 2.0-Beta1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html"/>
     <id>http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html</id>
-    <published>2015-03-29T20:00:00-04:00</published>
-    <updated>2015-10-10T16:12:24-04:00</updated>
+    <published>2015-03-30T02:00:00+02:00</published>
+    <updated>2015-10-08T08:52:14+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -515,8 +515,8 @@ the docs or want to improve it, do not hesitate to submit a PR.&lt;/p&gt;
     <title>Grafana 2.0 Alpha &amp; Preview</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html"/>
     <id>http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html</id>
-    <published>2015-02-09T19:00:00-05:00</published>
-    <updated>2015-07-29T03:36:23-04:00</updated>
+    <published>2015-02-10T01:00:00+01:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -645,8 +645,8 @@ Subscribe to newsletter to get notified.&lt;/p&gt;
     <title>Grafana 2.0, the future, and raintank</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html"/>
     <id>http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html</id>
-    <published>2015-01-11T19:00:00-05:00</published>
-    <updated>2015-07-29T03:36:23-04:00</updated>
+    <published>2015-01-12T01:00:00+01:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
