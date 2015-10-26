@@ -17,4 +17,4 @@
   }]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("bgrepeatround",t("backgroundRepeat","round")),e.addTest("bgrepeatspace",t("backgroundRepeat","space"))});
+define(["Modernizr","testAllProps"],function(e,n){e.addTest("bgrepeatround",n("backgroundRepeat","round")),e.addTest("bgrepeatspace",n("backgroundRepeat","space"))});
