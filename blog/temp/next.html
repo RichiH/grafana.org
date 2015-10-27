@@ -13,7 +13,7 @@ resize handles and improved InfluxDB and OpenTSDB support.</p>
 <p><img src="/assets/img/features/timepicker.png" alt="New Time picker"></p>
 
 <p>A new time picker with room for more quick ranges as well as new types of relative ranges, like <code class="prettyprint">Today</code>,
-<code class="prettyprint">The day so far</code> and <code class="prettyprint">This day last week</code>. Also an improved time &amp; calendar that now works
+<code class="prettyprint">The day so far</code> and <code class="prettyprint">This day last week</code>. Also an improved time &amp; calendar picker that now works
 correctly in UTC mode.</p>
 
 <h3 id="elasticsearch">Elasticsearch</h3>
@@ -21,9 +21,9 @@ correctly in UTC mode.</p>
 <p><img src="/assets/img/features/elasticsearch_metrics_ex1.png" alt="Elasticsearch example">
 <br></p>
 
-<p>This release brings fully featured query editor for Elasticsearch. You will now be able to vizualize
-logs or any kind of data stored in Elasticserarch. The elasticsearch query editor
-allows you to build both simple and complex queries for logs or metrics.</p>
+<p>This release brings a fully featured query editor for Elasticsearch. You will now be able to vizualize
+logs or any kind of data stored in Elasticserarch. The query editor allows you to build both simple
+and complex queries for logs or metrics.</p>
 
 <ul>
 <li>Extract many types of metrics from documents like
@@ -37,6 +37,7 @@ allows you to build both simple and complex queries for logs or metrics.</p>
 <ul>
 <li>Specify group by options like Top 5 based on Avg @value</li>
 </ul></li>
+<li>Auto completion for field names</li>
 <li>Query only relevant indicies based on time pattern</li>
 <li>Alias patterns for short readable series names</li>
 </ul>
@@ -88,7 +89,7 @@ data from Prometheus.</p>
 <ul>
 <li>Organization admins can now invite new users (via email or manually via invite link)</li>
 <li>Users can signup using invite link and get automatically added to invited organization</li>
-<li>User signup can (if enabled) contian an email verification step.</li>
+<li>User signup workflow can (if enabled) contain an email verification step.</li>
 <li>Check out <a href="https://github.com/grafana/grafana/issues/2353">#2353</a> for more info.</li>
 </ul>
 
