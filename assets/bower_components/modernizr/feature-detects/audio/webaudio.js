@@ -13,4 +13,4 @@
   }]
 }
 !*/
-define(["Modernizr"],function(t){t.addTest("webaudio",function(){var e="webkitAudioContext"in window,n="AudioContext"in window;return t._config.usePrefixes?e||n:n})});
+define(["Modernizr"],function(e){e.addTest("webaudio",function(){var t="webkitAudioContext"in window,n="AudioContext"in window;return e._config.usePrefixes?t||n:n})});
