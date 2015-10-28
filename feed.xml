@@ -5,10 +5,162 @@
   <id>http://grafana.org/blog</id>
   <link href="http://grafana.org/blog"/>
   <link href="http://grafana.org/feed.xml" rel="self"/>
-  <updated>2015-08-04T02:00:00+02:00</updated>
+  <updated>2015-10-28T01:00:00+01:00</updated>
   <author>
     <name>Grafana</name>
   </author>
+  <entry>
+    <title>Grafana 2.5 Released</title>
+    <link rel="alternate" href="http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html"/>
+    <id>http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html</id>
+    <published>2015-10-28T01:00:00+01:00</published>
+    <updated>2015-10-28T13:58:01+01:00</updated>
+    <author>
+      <name>Torkel Ödegaard</name>
+    </author>
+    <content type="html">&lt;h2 id="release-highlights"&gt;Release highlights&lt;/h2&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;img class="no-shadow" src="/assets/img/blog/grafana_2_5_graphic.png" alt="New Time picker"&gt;&lt;/p&gt;
+
+&lt;h3 id="download-grafana-2-5-now"&gt;&lt;a href="/download"&gt;Download Grafana 2.5 now&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an exciting release, and we want to share some of the highlights. The release includes many
+fixes and enhancements to all areas of Grafana, like new Data Sources, a new and improved timepicker,
+user invites, panel resize handles and improved InfluxDB and OpenTSDB support, LDAP improvements, Graph
+panel units.&lt;/p&gt;
+
+&lt;h3 id="new-time-range-controls"&gt;New time range controls&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/timepicker.png" alt="New Time picker"&gt;&lt;/p&gt;
+
+&lt;p&gt;A new timepicker with room for more quick ranges as well as new types of relative ranges, like &lt;code class="prettyprint"&gt;Today&lt;/code&gt;,
+&lt;code class="prettyprint"&gt;The day so far&lt;/code&gt; and &lt;code class="prettyprint"&gt;This day last week&lt;/code&gt;. Also an improved time &amp;amp; calendar picker that now works
+correctly in UTC mode.&lt;/p&gt;
+
+&lt;h3 id="elasticsearch"&gt;Elasticsearch&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/elasticsearch_metrics_ex1.png" alt="Elasticsearch example"&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;This release brings a fully featured query editor for Elasticsearch. You will now be able to visualize
+logs or any kind of data stored in Elasticserarch. The query editor allows you to build both simple
+and complex queries for logs or metrics.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compute metrics from your documents, supported Elasticsearch aggregations:
+
+&lt;ul&gt;
+&lt;li&gt;Count, Avg, Min, Max, Sum&lt;/li&gt;
+&lt;li&gt;Percentiles, Std Dev, etc.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Group by multiple terms or filters
+
+&lt;ul&gt;
+&lt;li&gt;Specify group by options like Top 5 based on Avg @value&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Auto completion for field names&lt;/li&gt;
+&lt;li&gt;Query only relevant indices based on time pattern&lt;/li&gt;
+&lt;li&gt;Alias patterns for short readable series names&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Try the new Elasticsearch query editor on the &lt;a href="http://play.grafana.org/dashboard/db/elasticsearch-metrics"&gt;play.grafana.org&lt;/a&gt; site.&lt;/p&gt;
+
+&lt;h3 id="cloudwatch"&gt;CloudWatch&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/cloudwatch.png" alt="Cloudwatch editor"&gt;&lt;/p&gt;
+
+&lt;p&gt;Grafana 2.5 ships with a new CloudWatch datasource that will allow you to query and visualize CloudWatch
+metrics directly from Grafana.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rich editor with auto completion for metric names, namespaces and dimensions&lt;/li&gt;
+&lt;li&gt;Templating queries for generic dashboards&lt;/li&gt;
+&lt;li&gt;Alias patterns for short readable series names&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="prometheus"&gt;Prometheus&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/prometheus_editor.png" alt="Prometheus editor"&gt;&lt;/p&gt;
+
+&lt;p&gt;Grafana 2.5 ships with a new Prometheus datasource that will allow you to query and visualize data
+stored in Prometheus.&lt;/p&gt;
+
+&lt;h3 id="mix-different-data-sources"&gt;Mix different data sources&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/mixed_data.png" alt="Mix data sources in the same dashboard or in the same graph!"&gt;&lt;/p&gt;
+
+&lt;p&gt;In previous releases you have been able to mix different data sources on the same dashboard. In v2.5 you
+will be able to mix them on the same graph! You can enable this by selecting the built in &lt;code class="prettyprint"&gt;-- Mixed --&lt;/code&gt; data source.
+When selected this will allow you to specify data source on a per query basis. This will, for example, allow you
+to plot metrics from different Graphite servers on the same Graph or plot data from Elasticsearch alongside
+data from Prometheus. Mixing different data sources on the same graph works for any data source, even custom ones.&lt;/p&gt;
+
+&lt;h3 id="panel-resize-handles"&gt;Panel Resize handles&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/panel_resize.gif" alt=""&gt;&lt;/p&gt;
+
+&lt;p&gt;This release adds resize handles to the the bottom right corners of panels making is easy to resize both width and height.&lt;/p&gt;
+
+&lt;h3 id="user-invites"&gt;User invites&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/features/org_invite.png" alt=""&gt;&lt;/p&gt;
+
+&lt;p&gt;This version also brings some new features for user management.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Organization admins can now invite new users (via email or manually via invite link)&lt;/li&gt;
+&lt;li&gt;Users can signup using invite link and get automatically added to invited organization&lt;/li&gt;
+&lt;li&gt;User signup workflow can (if enabled) contain an email verification step.&lt;/li&gt;
+&lt;li&gt;Check out &lt;a href="https://github.com/grafana/grafana/issues/2353"&gt;#2353&lt;/a&gt; for more info.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="miscellaneous-improvements"&gt;Miscellaneous improvements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;InfluxDB query editor now supports math and AS expressions&lt;/li&gt;
+&lt;li&gt;InfluxDB query editor now supports custom group by interval&lt;/li&gt;
+&lt;li&gt;Panel drilldown link is easier to reach&lt;/li&gt;
+&lt;li&gt;LDAP improvements (can now search for group membership if your LDAP server does not support memberOf attribute)&lt;/li&gt;
+&lt;li&gt;More units for graph and singlestat panel (Length, Volume, Temperature, Pressure, Currency)&lt;/li&gt;
+&lt;li&gt;Admin page for all organizations (remove / edit)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="breaking-changes"&gt;Breaking changes&lt;/h3&gt;
+
+&lt;p&gt;There have been some changes to the data source plugin API. If you are using a custom plugin check that there is an update for it before you upgrade. Also
+the new time picker does not currently support custom quick ranges like the last one did. This will likely be added in a
+future release.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;p&gt;For a detailed list and link to github issues for everything included in the 2.5 release please
+view the &lt;a href="https://github.com/grafana/grafana/blob/master/CHANGELOG.md"&gt;CHANGELOG.md&lt;/a&gt; file.&lt;/p&gt;
+
+&lt;h3 id="what-39-s-next-for-grafana"&gt;What&amp;rsquo;s next for Grafana?&lt;/h3&gt;
+
+&lt;p&gt;If this release does not excite you then maybe the next one will. Starting next week work on integrating
+alerting into Grafana, in a non-intrusive and composable way, will begin. We have already spent a lot of
+time discussing this feature with the Grafana user community, done UI mocks, etc. You can join the
+discussion and view mocks ups at &lt;a href="https://github.com/grafana/grafana/issues/2209"&gt;Issue #2209&lt;/a&gt;. Another top
+priority will be a table panel and more ways to visualize metrics.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h4 id="download-grafana-2-5-now"&gt;&lt;a href="http://grafana.org/download"&gt;Download Grafana 2.5 now&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id="thanks-to-project-sponsors"&gt;Thanks to project sponsors&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.squarespace.com"&gt;Squarespace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dreamhost.com"&gt;Dreamhost&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.demonware.net"&gt;Demonware&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mediamath.com/OpenSource"&gt;Mediamath&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Grafana 2.1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html"/>
@@ -638,142 +790,6 @@ Subscribe to newsletter to get notified.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.dreamhost.com"&gt;Dreamhost&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.demonware.net"&gt;Demonware&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mediamath.com/OpenSource"&gt;Mediamath&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Grafana 2.0, the future, and raintank</title>
-    <link rel="alternate" href="http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html"/>
-    <id>http://grafana.org/blog/2015/01/12/grafana2-the-future-and-raintank.html</id>
-    <published>2015-01-12T01:00:00+01:00</published>
-    <updated>2015-08-20T15:04:36+02:00</updated>
-    <author>
-      <name>Torkel Ödegaard</name>
-    </author>
-    <content type="html">&lt;p&gt;This is a semi long blog post about my experience working on Grafana during 2014 and the plans for 2015.
-So if you want to skip the personal &amp;amp; history stuff jump to the end for some news and plans for 2015.&lt;/p&gt;
-
-&lt;h3 id="in-the-beginning"&gt;In the beginning&lt;/h3&gt;
-
-&lt;p&gt;Grafana has now been in development for a little over one year. The first commit dates to Dec 5 2013.
-It started just as a late night hack trying to get Graphite to work with the histogram panel in Kibana.
-I had just started using Kibana at work and fell instantly in love with it. It was just so awesome at
-analyzing logs and its beautiful dark UI made it easy to build dashboards without having to manually
-edit json files. Something that many alternative Graphite dashboards required.&lt;/p&gt;
-
-&lt;p&gt;My late night Kibana + Graphite hack worked so well that I quickly started imagining my dream Graphite
-dashboard and graph composer and spent almost all of Christmas 2013 working non stop on realizing those
-initial ideas. Ideas like a full screen graph edit mode and an intelligent Graphite expression builder
-that makes graphite expressions more readable, editable and understandable. Of all the features in Grafana,
-I am most proud of the Graphite expression and function editor.&lt;/p&gt;
-
-&lt;div &gt;
-  &lt;img src="/assets/img/blog/graphite_query_editor.png"/&gt;
-  &lt;h4&gt;
-  &lt;small&gt;&lt;em&gt;The graphite query editor, showing the same query in text
-    edit mode and in the Grafana graphite editor mode
-    &lt;/em&gt;
-  &lt;/small&gt;
-  &lt;/h4&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I did not really expect much when I first released Grafana 1.0 on January 19th. There was such a plethora of
-other Graphite dashboards, so who would care about yet another one? Boy was I wrong. The reaction was really
-amazing. That evening after the first release Grafana went “mini” viral within the Graphite community and
-my phone buzzed constantly for about 40 minutes from all the retweets!&lt;/p&gt;
-
-&lt;p&gt;All the positive reaction gave me a lot energy and the will to spend most of my free time on Grafana during
-winter and spring 2014. I used to come to work at 7am to be able to squeeze in an hour on Grafana before
-having to start doing “real work”.&lt;/p&gt;
-
-&lt;h3 id="monitorama-may-2014"&gt;Monitorama May 2014&lt;/h3&gt;
-
-&lt;p&gt;Jason Dixon (@obfuscurity), one of the main developers on the Graphite project, invited me to speak at
-the Monitorma conference in Portland (a GREAT monitoring conference that is organized by Jason).
-I got a chance to meet and talk to some great people, like Jason, Luke Kanies, Paul Dix from InfluxDB,
-Dave Concannon from Hosted Graphite, and many others.&lt;/p&gt;
-
-&lt;p&gt;The reaction to my talk and from the many attendees that came up to me to express their love and thanks
-for Grafana was really amazing. There is going to be another Monitorama in June 2015, see you there!&lt;/p&gt;
-
-&lt;h3 id="full-time-work"&gt;Full time work&lt;/h3&gt;
-
-&lt;p&gt;By the end of April I was itching to work on Grafana full time. There were so many potential
-improvements and so little time. So I decided to quit my contracting work after the summer and start
-working on Grafana full time. I had some savings in my company that would last me about a year so I figured
-that it could be fun year working on open source. I also planned to explore options to commercialize
-Grafana or seek sponsorships. Summer went and so did autumn. I had a blast working on Grafana full time,
-releasing some pretty big improvements in v1.7 and v1.8. User adoption kept on growing, as did user feedback
-and contributions. I also managed to get some sponsors!&lt;/p&gt;
-
-&lt;h3 id="contributions-and-sponsorships"&gt;Contributions and Sponsorships&lt;/h3&gt;
-
-&lt;p&gt;A special thanks to all who have contributed to Gafana during last year in terms of pull request contributions,
-feedback on github and IRC. A special thanks goes to Grafana’s sponsors: &lt;a href="http://www.squarespace.com"&gt;Squarespace&lt;/a&gt;, &lt;a href="https://www.dreamhost.com/"&gt;Dreamhost&lt;/a&gt; and &lt;a href="http://www.demonware.net/"&gt;Demonware&lt;/a&gt;
-for helping support full the time work on Grafana.&lt;/p&gt;
-
-&lt;h3 id="grafana-in-2015"&gt;Grafana in 2015&lt;/h3&gt;
-
-&lt;p&gt;When I started working on Grafana full time I also started working on a Grafana backend.
-I figured that a Grafana backend that could do authentication, server side rendering of panels,
-integration with hipchat &amp;amp; slack, alerting etc could be a “Pro” version that I could charge money for.
-I did not spend much time on this backend as there was so much I wanted to get done in the frontend
-so it never saw the light of day in 2014.&lt;/p&gt;
-
-&lt;h3 id="raintank"&gt;Raintank&lt;/h3&gt;
-
-&lt;p&gt;There are no longer any plans for a closed source or commercial version of Grafana. The backend powered version
-will be 100% open source. What is making this possible is Grafana’s sponsors and a company I am co-founding
-together with Raj Dutt (founder of Voxel) and Anthony Woods. The company is called &lt;a href="http://raintank.io"&gt;Raintank&lt;/a&gt; and
-will focus on building and providing a SaaS platform around open source metric and monitoring solutions
-(Grafana is one among them). This SaaS platform will be completely open source.&lt;/p&gt;
-
-&lt;p&gt;We have assembled a great team with a lot of engineering and design talent that will, among many other things,
-accelerate Gafana development and strengthen the open source monitoring community.&lt;/p&gt;
-
-&lt;h3 id="grafana-2-0"&gt;Grafana 2.0&lt;/h3&gt;
-
-&lt;p&gt;So the good news is that there will NOT be any splintering of the Grafana user community into Pro/Enterprise
-users and OSS users. There will just be one open source Grafana codebase and variant. There will continue to
-be a standalone build for users who prefer the pure frontend nature of Grafana. The Grafana frontend architecture
-has been slighly redesigned to work in both standalone and backend mode. In backend mode it will utilize the backend
-for saving and searching dashboards, as well as a number of views that will be enabled (login, admin, etc).&lt;/p&gt;
-
-&lt;p&gt;The features that the backend will enable in Grafana 2.0 will initially be:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Integrated dashboard &amp;amp; user database (sqlite3)&lt;/li&gt;
-&lt;li&gt;Can also use mysql or postgres as database&lt;/li&gt;
-&lt;li&gt;Multi-tenant user accounts and authorization (can be disabled)
-
-&lt;ul&gt;
-&lt;li&gt;User &amp;amp; password&lt;/li&gt;
-&lt;li&gt;Github OAuth&lt;/li&gt;
-&lt;li&gt;Google OAuth&lt;/li&gt;
-&lt;li&gt;LDAP integration&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Server side rendering of panels to PNG images&lt;/li&gt;
-&lt;li&gt;Easy admin UI for data sources (can also be configured via config file)&lt;/li&gt;
-&lt;li&gt;Integrated data source http proxy for all datasources (to work around CORS issues)&lt;/li&gt;
-&lt;li&gt;HTTP API&lt;/li&gt;
-&lt;li&gt;Migration script for dashboards stored in Elasticsearch or InfluxDB&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is the very basic set that we are aiming for right now. There will probably be a lot of enhancements in the
-existing dashboard and panel features and the initial release will be quickly followed by more advanced features
-like integration with hipchat, slack &amp;amp; hubot, user preferences and eventually alerting.&lt;/p&gt;
-
-&lt;p&gt;Grafana 2.0 is currently not ready for a alpha or beta. But the code and a preview version will
-be made public shorty, hopefully within 2-3 weeks.&lt;/p&gt;
-
-&lt;h4 id="other-news"&gt;Other news&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Grafana 1.9.1 was released two weeks ago (in case you missed this)&lt;/li&gt;
-&lt;li&gt;Grafana now has a user and developer mailing list. &lt;a href="https://groups.io/org/groupsio/grafana"&gt;Subscribe here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Graphite 0.9.13-pre1 has been released! &lt;a href="http://graphite.readthedocs.org/en/latest/releases/0_9_13.html"&gt;Read the release notes&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;a href="https://github.com/grafana/grafana-plugins"&gt;Grafana plugins&lt;/a&gt; repository has seen some activity lately with updates for the KairosDB datasource and a basic implementation
-for an Atlas datasource (the Netflix metrics db).&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
