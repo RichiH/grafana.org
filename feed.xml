@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html"/>
     <id>http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html</id>
     <published>2015-10-28T01:00:00+01:00</published>
-    <updated>2015-10-28T15:54:18+01:00</updated>
+    <updated>2015-10-28T15:56:57+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -143,7 +143,7 @@ view the &lt;a href="https://github.com/grafana/grafana/blob/master/CHANGELOG.md
 
 &lt;p&gt;If this release does not excite you then maybe the next one will. Starting next week work on integrating
 alerting into Grafana, in a non-intrusive and composable way, will begin. We have already spent a lot of
-time discussing this feature with the Grafana user community, done UI mocks, etc. You can join the
+time discussing this feature with the Grafana user community, done UI mock ups, etc. You can join the
 discussion and view mocks ups at &lt;a href="https://github.com/grafana/grafana/issues/2209"&gt;Issue #2209&lt;/a&gt;. Another top
 priority will be a table panel and more ways to visualize metrics.&lt;/p&gt;
 
