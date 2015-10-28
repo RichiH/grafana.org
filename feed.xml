@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html"/>
     <id>http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html</id>
     <published>2015-10-28T01:00:00+01:00</published>
-    <updated>2015-10-28T13:58:01+01:00</updated>
+    <updated>2015-10-28T14:21:52+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -23,9 +23,9 @@
 &lt;p&gt;&lt;br&gt;
 &lt;img class="no-shadow" src="/assets/img/blog/grafana_2_5_graphic.png" alt="New Time picker"&gt;&lt;/p&gt;
 
-&lt;h3 id="download-grafana-2-5-now"&gt;&lt;a href="/download"&gt;Download Grafana 2.5 now&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
+&lt;div class="text-center"&gt;
+  &lt;a class="button secondary radius hollow" href="/download"&gt;Download Grafana 2.5 now&lt;/a&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is an exciting release, and we want to share some of the highlights. The release includes many
 fixes and enhancements to all areas of Grafana, like new Data Sources, a new and improved timepicker,
