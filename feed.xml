@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html"/>
     <id>http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html</id>
     <published>2015-10-28T01:00:00+01:00</published>
-    <updated>2015-10-28T15:56:57+01:00</updated>
+    <updated>2015-10-28T16:04:53+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -154,6 +154,7 @@ priority will be a table panel and more ways to visualize metrics.&lt;/p&gt;
 &lt;h4 id="thanks-to-project-sponsors"&gt;Thanks to project sponsors&lt;/h4&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://raintank.io"&gt;Raintank&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.squarespace.com"&gt;Squarespace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.dreamhost.com"&gt;Dreamhost&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.demonware.net"&gt;Demonware&lt;/a&gt;&lt;/li&gt;
