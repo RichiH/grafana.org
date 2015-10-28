@@ -1,1 +1,0 @@
-define(["ModernizrProto"],function(e){var t=function(){};return t.prototype=e,t=new t});

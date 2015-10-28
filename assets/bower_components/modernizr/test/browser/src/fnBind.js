@@ -1,1 +1,0 @@
-describe("fnBind",function(){var e,t;before(function(n){var o=requirejs.config({context:Math.random().toString().slice(2),baseUrl:"../src",paths:{cleanup:"../test/cleanup"}});o(["fnBind","cleanup"],function(o,i){e=o,t=i,n()})}),it("binds to `this`",function(){var t={x:1},n=function(){return this.x};expect(e(n,t)()).to.equal(1)}),after(function(){t()})});
