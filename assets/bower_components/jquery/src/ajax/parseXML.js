@@ -1,1 +1,1 @@
-define(["../core"],function(e){return e.parseXML=function(t){var n,r;if(!t||"string"!=typeof t)return null;try{r=new DOMParser,n=r.parseFromString(t,"text/xml")}catch(i){n=void 0}return(!n||n.getElementsByTagName("parsererror").length)&&e.error("Invalid XML: "+t),n},e.parseXML});
+define(["../core"],function(t){return t.parseXML=function(e){var n,i;if(!e||"string"!=typeof e)return null;try{i=new DOMParser,n=i.parseFromString(e,"text/xml")}catch(r){n=void 0}return(!n||n.getElementsByTagName("parsererror").length)&&t.error("Invalid XML: "+e),n},t.parseXML});

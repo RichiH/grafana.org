@@ -5,7 +5,7 @@
   <id>http://grafana.org/blog</id>
   <link href="http://grafana.org/blog"/>
   <link href="http://grafana.org/feed.xml" rel="self"/>
-  <updated>2015-10-27T20:00:00-04:00</updated>
+  <updated>2015-10-28T01:00:00+01:00</updated>
   <author>
     <name>Grafana</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Grafana 2.5 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html"/>
     <id>http://grafana.org/blog/2015/10/28/Grafana-2-5-Released.html</id>
-    <published>2015-10-27T20:00:00-04:00</published>
-    <updated>2015-10-28T15:31:33-04:00</updated>
+    <published>2015-10-28T01:00:00+01:00</published>
+    <updated>2015-10-28T16:04:53+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -166,8 +166,8 @@ priority will be a table panel and more ways to visualize metrics.&lt;/p&gt;
     <title>Grafana 2.1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html"/>
     <id>http://grafana.org/blog/2015/08/04/Grafana-2-1-Released.html</id>
-    <published>2015-08-03T20:00:00-04:00</published>
-    <updated>2015-08-24T09:37:25-04:00</updated>
+    <published>2015-08-04T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -366,8 +366,8 @@ view the &lt;a href="&amp;quot;https://github.com/grafana/grafana/blob/master/CH
     <title>Grafana 2.0 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/20/Grafana-2-Released.html"/>
     <id>http://grafana.org/blog/2015/04/20/Grafana-2-Released.html</id>
-    <published>2015-04-19T20:00:00-04:00</published>
-    <updated>2015-07-20T13:51:40-04:00</updated>
+    <published>2015-04-20T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -434,8 +434,8 @@ guide.&lt;/p&gt;
     <title>March 2015 User Survey</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/04/09/March15-Survery.html"/>
     <id>http://grafana.org/blog/2015/04/09/March15-Survery.html</id>
-    <published>2015-04-08T20:00:00-04:00</published>
-    <updated>2015-07-07T10:28:23-04:00</updated>
+    <published>2015-04-09T02:00:00+02:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -458,8 +458,8 @@ gratifying compliments about how much everyone appreciate Grafana.&lt;/p&gt;
     <title>Grafana 2.0-Beta1 Released</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html"/>
     <id>http://grafana.org/blog/2015/03/30/Grafana-2-Beta1.html</id>
-    <published>2015-03-29T20:00:00-04:00</published>
-    <updated>2015-09-14T11:18:15-04:00</updated>
+    <published>2015-03-30T02:00:00+02:00</published>
+    <updated>2015-10-08T08:52:14+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -668,8 +668,8 @@ the docs or want to improve it, do not hesitate to submit a PR.&lt;/p&gt;
     <title>Grafana 2.0 Alpha &amp; Preview</title>
     <link rel="alternate" href="http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html"/>
     <id>http://grafana.org/blog/2015/02/10/Grafana-2-Alpha-and-preview.html</id>
-    <published>2015-02-09T19:00:00-05:00</published>
-    <updated>2015-07-07T10:28:23-04:00</updated>
+    <published>2015-02-10T01:00:00+01:00</published>
+    <updated>2015-08-20T15:04:36+02:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>

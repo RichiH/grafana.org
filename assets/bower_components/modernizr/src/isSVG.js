@@ -1,0 +1,1 @@
+define(["docElement"],function(e){var t="svg"===e.nodeName.toLowerCase();return t});
