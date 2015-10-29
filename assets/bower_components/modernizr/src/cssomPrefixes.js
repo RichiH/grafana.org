@@ -1,1 +1,0 @@
-define(["ModernizrProto","omPrefixes"],function(e,t){var n=e._config.usePrefixes?t.split(" "):[];return e._cssomPrefixes=n,n});
