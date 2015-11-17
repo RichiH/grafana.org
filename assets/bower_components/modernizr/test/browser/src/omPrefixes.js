@@ -1,0 +1,1 @@
+describe("omPrefixes",function(){var t,e;before(function(n){var i=requirejs.config({context:Math.random().toString().slice(2),baseUrl:"../src",paths:{cleanup:"../test/cleanup"}});i(["omPrefixes","cleanup"],function(i,r){t=i,e=r,n()})}),it("returns a string",function(){expect(t).to.be.a("string"),expect(t.length).to.not.be(0)}),after(function(){e()})});
