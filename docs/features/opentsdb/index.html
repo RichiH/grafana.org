@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><title>Grafana - Docs - OpenTSDB</title><meta content="0; url=http://docs.grafana.org/datasources/opentsdb" http-equiv="refresh" /><link href="http://docs.grafana.org/datasources/opentsdb" rel="canonical" /><meta content="Torkel Ödegaard" name="author" /><meta content="width=device-width, initial-scale=1" name="viewport" /><meta content="The leading graph and dashboard builder for visualizing time series metrics." name="description" /><meta content="Grafana, Graphite, Dashboard, InfluxDB, OpenTSDB, Elasticsearch, Metrics, Editor, Composer, Analytics, Graphana, Prometheus" name="keywords" /><link href="/assets/img/fav32.png" rel="icon" /><link href="/assets/stylesheets/all.css" rel="stylesheet" /><link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" /><script src="/assets/javascripts/all.js"></script><meta content="Docs - OpenTSDB" property="og:title" /><meta content="Grafana.org" property="og:site_name" /><meta content="website" property="og:type" /><meta content="http://grafana.org/assets/img/docs/nice_dashboard.png" property="og:image" /></head><body class="docs docs_features docs_features_opentsdb docs_features_opentsdb_index"><section class="nav"><div class="row"><nav class="top-bar" data-topbar="1"><ul class="title-area"><li class="name"><a href="/"><img class="no-shadow" height="35" src="/assets/img/logo_transparent_200x75.png" width="150px" /></a></li><li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li></ul><section class="top-bar-section"><ul class="right"><li><a href="/features/">Features</a></li><li><a href="http://docs.grafana.org">Docs</a></li><li><a href="/community/">Community</a></li><li><a href="/blog/">Blog</a></li><li class="has-form"><a class="button" href="http://play.grafana.org" id="top-bar-demo-button" target="_blank">Live Demo</a></li><li><a href="https://github.com/grafana/grafana" target="_blank" title="Go to github repository"><i class="fa fa-fw fa-github"></i></a</li><li class="has-form"><a class="button" href="/download" id="top-bar-button">Download</a></li></ul></section></nav></div></section><section class="main"><h2 id="opentsdb-configuration">OpenTSDB configuration</h2>
+
+<p>For OpenTSDB to work in Grafana you will either be needing to run the latest OpenTSDB
+version built from the <code class="prettyprint">next</code> branch that includes built in support for remote
+api usage (CORS). This was merged into the next branch with <a href="https://github.com/OpenTSDB/opentsdb/pull/333">this issue</a>.</p>
+
+<p>If you upgrade you have to set the OpenTSDB setting <code class="prettyprint">tsd.http.request.cors_domains</code> to your
+grafana webserver domain name.</p>
+
+<p>If you do not want to upgrade OpenTSDB you need to setup an nginx proxy that will add the necessary CORS
+HTTP headers.</p>
+
+<p>Example nginx config:</p>
+
+<p>Replace:</p>
+
+<ul>
+<li><strong>OPENTSDB_HOST</strong> (2 instances) - Hostname or IP address of the OpenTSDB server</li>
+<li><strong>OPENTSDB_PORT</strong> (1 instance) - Port number of the OpenTSDB server</li>
+<li><strong>GRAFANA_DOMAIN</strong> (1 instance) - Domain/Hostname of the Grafana server</li>
+</ul>
+<pre class="highlight nginx"><code><span class="k">upstream</span> <span class="s">opentsdb</span> <span class="p">{</span>
+  <span class="kn">server</span> <span class="s">OPENTSDB_HOST:OPENTSDB_PORT</span> <span class="s">fail_timeout=0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="s">*:4243</span><span class="p">;</span>
+
+  <span class="kn">location</span> <span class="n">/</span> <span class="p">{</span>
+    <span class="c1"># Regex to whitelist systems
+</span>    <span class="kn">if</span> <span class="s">(</span><span class="nv">$http_origin</span> <span class="p">~</span><span class="sr">*</span> <span class="s">(https?://([a-z0-9._-]*</span><span class="err">\</span><span class="s">.)?GRAFANA_DOMAIN(:[0-9]+)?))</span> <span class="p">{</span>
+      <span class="kn">set</span> <span class="nv">$cors</span> <span class="s">"true"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># OPTIONS indicates a CORS pre-flight request
+</span>    <span class="kn">if</span> <span class="s">(</span><span class="nv">$request_method</span> <span class="p">=</span> <span class="s">'OPTIONS')</span> <span class="p">{</span>
+      <span class="kn">set</span> <span class="nv">$cors</span> <span class="s">"</span>$<span class="p">{</span><span class="kn">cors</span><span class="err">}</span><span class="s">-options"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># If it's OPTIONS, then it's a CORS preflight request so respond immediately with no response body
+</span>    <span class="kn">if</span> <span class="s">(</span><span class="nv">$cors</span> <span class="p">=</span> <span class="s">"true-options")</span> <span class="p">{</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Origin'</span> <span class="s">"</span><span class="nv">$http_origin</span><span class="s">"</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Credentials'</span> <span class="s">'true'</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Max-Age'</span> <span class="mi">1728000</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Methods'</span> <span class="s">'GET,</span> <span class="s">POST,</span> <span class="s">OPTIONS'</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Headers'</span> <span class="s">'Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since'</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Content-Length'</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Content-Type'</span> <span class="s">'text/plain</span> <span class="s">charset=UTF-8'</span><span class="p">;</span>
+      <span class="kn">return</span> <span class="mi">204</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Proxy the request
+</span>    <span class="kn">proxy_set_header</span> <span class="s">X-Host</span> <span class="s">OPENTSDB_HOST</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$Proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">Authorization</span> <span class="s">""</span><span class="p">;</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://opentsdb</span><span class="p">;</span>
+    <span class="kn">proxy_redirect</span> <span class="s">default</span><span class="p">;</span>
+    <span class="kn">proxy_buffer_size</span> <span class="mi">16k</span><span class="p">;</span>
+    <span class="kn">proxy_buffers</span> <span class="mi">8</span> <span class="mi">32k</span><span class="p">;</span>
+    <span class="kn">proxy_busy_buffers_size</span> <span class="mi">64k</span><span class="p">;</span>
+    <span class="kn">proxy_temp_file_write_size</span> <span class="mi">64k</span><span class="p">;</span>
+    <span class="kn">proxy_read_timeout</span> <span class="mi">120</span><span class="p">;</span>
+    <span class="c1"># Strip any OpenTSDB-generated CORS headers that overlap with our own
+</span>    <span class="kn">proxy_hide_header</span> <span class="s">'Access-Control-Allow-Origin'</span><span class="p">;</span>
+    <span class="kn">proxy_hide_header</span> <span class="s">'Access-Control-Allow-Credentials'</span><span class="p">;</span>
+    <span class="kn">proxy_hide_header</span> <span class="s">'Access-Control-Allow-Headers'</span><span class="p">;</span>
+
+    <span class="c1"># if it's a GET or POST, set the standard CORS responses header
+</span>    <span class="kn">if</span> <span class="s">(</span><span class="nv">$cors</span> <span class="p">=</span> <span class="s">"true")</span> <span class="p">{</span>
+      <span class="c1"># Add our own CORS headers
+</span>      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Origin'</span> <span class="s">"</span><span class="nv">$http_origin</span><span class="s">"</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Credentials'</span> <span class="s">'true'</span><span class="p">;</span>
+      <span class="kn">add_header</span> <span class="s">'Access-Control-Allow-Headers'</span> <span class="s">'*'</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<h2 id="grafana-config">Grafana config</h2>
+
+<p>In config.js specify your opentsdb datasource:</p>
+<pre class="highlight javascript"><code><span class="nx">datasources</span><span class="err">:</span> <span class="p">{</span>
+  <span class="s1">'OpenTSDB-TEST'</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nl">default</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">type</span><span class="err">:</span> <span class="s1">'opentsdb'</span><span class="p">,</span>
+    <span class="nx">url</span><span class="err">:</span> <span class="s2">"http://my_opentsdb_server:4242"</span>
+  <span class="p">}</span>
+ <span class="p">},</span>
+</code></pre>
+
+<h2 id="create-a-graph">Create a graph</h2>
+
+<p>Open a graph in edit mode by click the title.</p>
+
+<p><img src="/assets/img/opentsdb/editor_v1.png" /></p>
+
+<p>For details on opentsdb metric queries
+checkout the offical <a href="http://opentsdb.net/docs/build/html/index.html">OpenTSDB documentation</a></p>
+</section><div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls"><div class="slides"></div><h3 class="title"></h3><a class="prev">‹</a><a class="next">›</a><a class="close">×</a><a class="play-pause"></a><ol class="indicator"></ol></div><footer class="page-footer"><div class="footer-bg"></div><div class="footer-content row text-center"><section class="newsletter"><div class="row"><h3 class="text-center">Get notified of new releases</h3></div><div class="row"><div class="medium-10 large-6 columns medium-offset-1 large-offset-3"><form action="http://grafana.us8.list-manage.com/subscribe/post?u=2aeb5711db2aececc990be536&amp;id=5585d37ecc" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" target="_blank"><div class="row collapse"><div class="medium-10 columns"><input class="email" id="mce-EMAIL" name="EMAIL" placeholder="email address" type="email" value="" /></div><div class="medium-2 columns"><input class="button postfix" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe" /></div></div></form></div></div></section><div class="footer-social"><span><i class="fa fa-github"></i><a href="https://github.com/grafana/grafana/issues">issue tracker</a> on GitHub</span><span><i class="fa fa-comment"></i><a href="irc://chat.freenode.net/#grafana">#grafana</a> on freenode</span><span><i class="fa fa-twitter"></i><a href="http://twitter.com/grafana">@grafana</a> on Twitter</span><span><i class="fa fa-envelope"></i><a href="mailto:torkel@grafana.org">email</a></span></div><div class="row copyright text-center">&copy; 2015 Torkel Ödegaard &amp; Coding Instinct AB</div></div></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-47280256-1', 'grafana.org');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview', {
+ 'page': location.pathname + location.search  + location.hash,
+});</script></body></html>

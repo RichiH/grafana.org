@@ -1,1 +1,1 @@
-define(["../core","../queue","../effects"],function(e){return e.fn.delay=function(t,n){return t=e.fx?e.fx.speeds[t]||t:t,n=n||"fx",this.queue(n,function(e,n){var i=setTimeout(e,t);n.stop=function(){clearTimeout(i)}})},e.fn.delay});
+define(["../core","../queue","../effects"],function(t){return t.fn.delay=function(e,n){return e=t.fx?t.fx.speeds[e]||e:e,n=n||"fx",this.queue(n,function(t,n){var i=setTimeout(t,e);n.stop=function(){clearTimeout(i)}})},t.fn.delay});

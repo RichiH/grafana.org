@@ -1,1 +1,1 @@
-define(function(){var n={}.toString;return n});
+define(function(){var e={}.toString;return e});
