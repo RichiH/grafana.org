@@ -14,4 +14,4 @@
   ]
 }
 !*/
-define(["Modernizr","prefixed","is"],function(e,t,n){var i,r=t("crypto",window);if(r&&"getRandomValues"in r&&"Uint32Array"in window){var o=new Uint32Array(10),d=r.getRandomValues(o);i=d&&n(d[0],"number")}e.addTest("getrandomvalues",!!i)});
+define(["Modernizr","prefixed","is"],function(e,t,n){var i,o=t("crypto",window);if(o&&"getRandomValues"in o&&"Uint32Array"in window){var r=new Uint32Array(10),d=o.getRandomValues(r);i=d&&n(d[0],"number")}e.addTest("getrandomvalues",!!i)});

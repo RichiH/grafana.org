@@ -11,4 +11,4 @@
   "polyfills": ["html5gears"]
 }
 !*/
-define(["Modernizr"],function(t){t.addTest("applicationcache","applicationCache"in window)});
+define(["Modernizr"],function(e){e.addTest("applicationcache","applicationCache"in window)});

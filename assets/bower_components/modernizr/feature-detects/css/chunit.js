@@ -10,4 +10,4 @@
   }]
 }
 !*/
-define(["Modernizr","modElem"],function(e,t){e.addTest("csschunit",function(){var e,n=t.elem.style;try{n.fontSize="3ch",e=-1!==n.fontSize.indexOf("ch")}catch(i){e=!1}return e})});
+define(["Modernizr","modElem"],function(e,t){e.addTest("csschunit",function(){var e,i=t.elem.style;try{i.fontSize="3ch",e=-1!==i.fontSize.indexOf("ch")}catch(n){e=!1}return e})});

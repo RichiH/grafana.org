@@ -11,4 +11,4 @@
   "builderAliases": ["fullscreen_api"]
 }
 !*/
-define(["Modernizr","domPrefixes","prefixed"],function(t,e,n){t.addTest("fullscreen",!(!n("exitFullscreen",document,!1)&&!n("cancelFullScreen",document,!1)))});
+define(["Modernizr","domPrefixes","prefixed"],function(e,t,n){e.addTest("fullscreen",!(!n("exitFullscreen",document,!1)&&!n("cancelFullScreen",document,!1)))});

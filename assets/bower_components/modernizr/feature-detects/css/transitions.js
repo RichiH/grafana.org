@@ -6,4 +6,4 @@
   "tags": ["css"]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("csstransitions",t("transition","all",!0))});
+define(["Modernizr","testAllProps"],function(t,e){t.addTest("csstransitions",e("transition","all",!0))});

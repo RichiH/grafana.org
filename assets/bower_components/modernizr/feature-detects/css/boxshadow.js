@@ -10,4 +10,4 @@
   ]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("boxshadow",t("boxShadow","1px 1px",!0))});
+define(["Modernizr","testAllProps"],function(t,e){t.addTest("boxshadow",e("boxShadow","1px 1px",!0))});
