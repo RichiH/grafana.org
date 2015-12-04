@@ -8,4 +8,4 @@
   "tags": ["css"]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("borderimage",t("borderImage","url() 1",!0))});
+define(["Modernizr","testAllProps"],function(e,n){e.addTest("borderimage",n("borderImage","url() 1",!0))});

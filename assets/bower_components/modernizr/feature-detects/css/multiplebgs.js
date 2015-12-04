@@ -6,4 +6,4 @@
   "tags": ["css"]
 }
 !*/
-define(["Modernizr","createElement"],function(e,t){e.addTest("multiplebgs",function(){var e=t("a").style;return e.cssText="background:url(https://),url(https://),red url(https://)",/(url\s*\(.*?){3}/.test(e.background)})});
+define(["Modernizr","createElement"],function(e,n){e.addTest("multiplebgs",function(){var e=n("a").style;return e.cssText="background:url(https://),url(https://),red url(https://)",/(url\s*\(.*?){3}/.test(e.background)})});

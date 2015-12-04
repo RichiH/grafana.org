@@ -14,11 +14,13 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/12/04/Grafana-2-6-Beta-Released.html"/>
     <id>http://grafana.org/blog/2015/12/04/Grafana-2-6-Beta-Released.html</id>
     <published>2015-12-04T01:00:00+01:00</published>
-    <updated>2015-12-04T15:44:25+01:00</updated>
+    <updated>2015-12-04T16:50:21+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
     <content type="html">&lt;h2 id="release-highlights"&gt;Release highlights&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/blog/v2.6/header.png" class="no-shadow"&gt;&lt;/p&gt;
 
 &lt;p&gt;This release adds a new panel, namely the top requested &lt;strong&gt;Table Panel&lt;/strong&gt;. Yes it is
 finally here! The reason for the beta release status is because the release also
@@ -92,6 +94,12 @@ you want to show in the table.&lt;/p&gt;
 use Elasticsearch metric aggregations to get accurate aggregations for the selected time range.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/assets/img/blog/v2.6/elastic_aggregations.png"&gt;&lt;/p&gt;
+
+&lt;h4 id="annotations"&gt;Annotations&lt;/h4&gt;
+
+&lt;p&gt;The table can also show any annotations you have enabled in the dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/img/blog/v2.6/table_annotations.png"&gt;&lt;/p&gt;
 
 &lt;h3 id="the-new-influxdb-editor"&gt;The New InfluxDB Editor&lt;/h3&gt;
 

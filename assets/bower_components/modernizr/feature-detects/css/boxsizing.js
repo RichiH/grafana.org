@@ -15,4 +15,4 @@
   }]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("boxsizing",t("boxSizing","border-box",!0)&&(void 0===document.documentMode||document.documentMode>7))});
+define(["Modernizr","testAllProps"],function(e,n){e.addTest("boxsizing",n("boxSizing","border-box",!0)&&(void 0===document.documentMode||document.documentMode>7))});

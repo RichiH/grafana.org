@@ -12,4 +12,4 @@
   "warnings": ["Opera Mini supports :target but doesn't update the hash for anchor links."]
 }
 !*/
-define(["Modernizr"],function(e){e.addTest("target",function(){var e=window.document;if(!("querySelectorAll"in e))return!1;try{return e.querySelectorAll(":target"),!0}catch(t){return!1}})});
+define(["Modernizr"],function(t){t.addTest("target",function(){var t=window.document;if(!("querySelectorAll"in t))return!1;try{return t.querySelectorAll(":target"),!0}catch(e){return!1}})});

@@ -15,4 +15,4 @@
   }]
 }
 !*/
-define(["Modernizr","testAllProps"],function(e,t){e.addTest("shapes",t("shapeOutside","content-box",!0))});
+define(["Modernizr","testAllProps"],function(e,n){e.addTest("shapes",n("shapeOutside","content-box",!0))});
