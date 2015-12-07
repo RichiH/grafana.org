@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/12/04/Grafana-2-6-Beta-Released.html"/>
     <id>http://grafana.org/blog/2015/12/04/Grafana-2-6-Beta-Released.html</id>
     <published>2015-12-04T01:00:00+01:00</published>
-    <updated>2015-12-04T16:50:21+01:00</updated>
+    <updated>2015-12-07T08:42:55+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
@@ -32,7 +32,7 @@ before a stable release can be made.&lt;/p&gt;
   &lt;a class="button secondary radius" href="/download"&gt;Download Grafana 2.6 beta now&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The main documentation pages has yet to be updated with information about how to use
+&lt;p&gt;The main documentation pages have yet to be updated with information about how to use
 the new table panel and the new InfluxDB editor so for now refer to this blog post for guidance.&lt;/p&gt;
 
 &lt;h3 id="table-panel"&gt;Table Panel&lt;/h3&gt;
@@ -50,11 +50,11 @@ Where &lt;code class="prettyprint"&gt;Metric&lt;/code&gt; is the name of the tim
 &lt;h4 id="table-transform"&gt;Table Transform&lt;/h4&gt;
 
 &lt;p&gt;Above you see the options tab for the &lt;strong&gt;Table Panel&lt;/strong&gt;. The most important option is the &lt;code class="prettyprint"&gt;To Table Transform&lt;/code&gt;.
-This options controls how the result of the metric/data query is turned into a table.&lt;/p&gt;
+This option controls how the result of the metric/data query is turned into a table.&lt;/p&gt;
 
 &lt;h4 id="column-styles"&gt;Column Styles&lt;/h4&gt;
 
-&lt;p&gt;The column styles allow you control how dates and numbers are formated.&lt;/p&gt;
+&lt;p&gt;The column styles allow you control how dates and numbers are formatted.&lt;/p&gt;
 
 &lt;h3 id="time-series-to-columns"&gt;Time series to columns&lt;/h3&gt;
 
@@ -68,13 +68,13 @@ a different table by changing the &lt;code class="prettyprint"&gt;To Table Trans
 
 &lt;h3 id="time-series-to-aggregations"&gt;Time series to aggregations&lt;/h3&gt;
 
-&lt;p&gt;This transform works very similar to the legend values in the Graph panel. Each series gets its own row. In Options
-tab you can using the Columns plus button to select which aggregations you want.&lt;/p&gt;
+&lt;p&gt;This transform works very similar to the legend values in the Graph panel. Each series gets its own row. In the Options
+tab you can select which aggregations you want using the plus button the Columns section.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/assets/img/blog/v2.6/table_ts_to_aggregations.png"&gt;&lt;/p&gt;
 
-&lt;p&gt;You have to think how accurate the aggregations will be. It depends on what aggregation is used in the time series query,
-how many data points is fetched, etc. The time series aggregations is calculated by Grafana after aggregation is performed
+&lt;p&gt;You have to think about how accurate the aggregations will be. It depends on what aggregation is used in the time series query,
+how many data points are fetched, etc. The time series aggregations are calculated by Grafana after aggregation is performed
 by the time series database.&lt;/p&gt;
 
 &lt;h4 id="raw-logs-queries"&gt;Raw logs queries&lt;/h4&gt;
