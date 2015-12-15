@@ -14,11 +14,11 @@
     <link rel="alternate" href="http://grafana.org/blog/2015/12/14/Grafana-2-6-Released.html"/>
     <id>http://grafana.org/blog/2015/12/14/Grafana-2-6-Released.html</id>
     <published>2015-12-14T01:00:00+01:00</published>
-    <updated>2015-12-14T15:59:03+01:00</updated>
+    <updated>2015-12-15T09:26:12+01:00</updated>
     <author>
       <name>Torkel Ödegaard</name>
     </author>
-    <content type="html">&lt;p&gt;We are proud to announce the release of v2.6.0 stable release. This release includes a new &lt;a href="http://docs.grafana.org/reference/table_panel"&gt;Table panel&lt;/a&gt;,
+    <content type="html">&lt;p&gt;We are proud to announce the v2.6.0 stable release. This release includes a new &lt;a href="http://docs.grafana.org/reference/table_panel"&gt;Table panel&lt;/a&gt;,
 an example of which you can see below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/assets/img/features/table-panel.png"&gt;&lt;/p&gt;
